@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Intro to Ruby</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/moon.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>Ruby Crash Course</h1>
+					<img src="images/tiy-logo.png" alt="The Iron Yard" class="plain">
+					<p>
+						<small>Instructor <a href="http://twitter.com/cecycorrea">Cecy Correa</a></small>
+					</p>
+				</section>
+				<section>
+					<h2>History of Ruby</h2>
+					<ul>
+						<li class="fragment">Written / Invented by Yukihiro Matsumoto “Matz” in 1995</li>
+						<li class="fragment">Based on Lisp, Perl, and others</li>
+						<li class="fragment">Gained popularity around 2000</li>
+						<li class="fragment">Ruby on Rails comes out in 2005 and Ruby really explodes in popularity at that time.</li>
+					</ul>
+				</section>
+				<section data-background="images/matz.jpg">
+					<h2 class="highlighted-bg">Oh hai! I'm Matz!</h2>
+				</section>
+				<section>
+					<h2>Ruby is...</h2>
+					<ul>
+						<li class="fragment">Created for Programmer Happiness</li>
+						<li class="fragment">Object-Oriented</li>
+						<li class="fragment">Dynamic Type System</li>
+						<li class="fragment">Duck Type System</li>
+					</ul>
+				</section>
+				<section data-background="http://i.giphy.com/TdfyKrN7HGTIY.gif">
+					<h2 class="highlighted-bg">Programmer Happiness</h2>
+				</section>
+				<section data-background="images/all-the-things.png">
+					<h2 class="highlighted-bg">Object-Oriented</h2>
+				</section>
+				<section data-background="http://i.giphy.com/6xE1FNcorRInS.gif">
+					<h2 class="highlighted-bg">Dynamic Type Language</h2>
+				</section>
+				<section data-background="http://i.giphy.com/QS0KOjNRG0tfG.gif">
+					<h2 class="highlighted-bg">*Not* Static Type Language</h2>
+				</section>
+				<section data-background="http://i.giphy.com/AWQdSuOw5UbrW.gif">
+					<h2 class="highlighted-bg">Duck Typed</h2>
+				</section>
+				<section data-background="http://i.giphy.com/12QgPOiTa7Ab04.gif">
+					<h2 class="highlighted-bg">Everything is True (except for False and Nil)</h2>
+				</section>
+			<section data-background="http://i.giphy.com/13AN8X7jBIm15m.gif">
+				<h2 class="highlighted-bg">Let's start coding!</h2>
+			</section>
+			<section>
+				<h2>https://repl.it</h2>
+				<p>Select "Ruby"</p>
+			</section>
+			<section>
+				<h2>Repl.It</h2>
+				<pre><code class="hljs" data-trim contenteditable>
+				puts "Hello World!"
+				</code></pre>
+				<pre><code class="hljs" data-trim contenteditable>
+				print "Hello World!"
+				</code></pre>
+			</section>
+			<section>
+				<h2>Does math!</h2>
+				<pre><code class="hljs" data-trim contenteditable>
+				1 + 1
+				</code></pre>
+				<p class="fragment">Will evaluate to 2!</p>
+				<p class="fragment">You can subtract (-), multiply (*), divide (%)</p>
+			</section>
+			<section data-background="http://i.giphy.com/xTiTnnLkYTDWSOWSHK.gif">
+				<h2>We're coding!</h2>
+			</section>
+			<section>
+				<h2>Variables</h2>
+				<p>Just puting Hello World! every time is boring. We can store this in a variable!</p>
+				<pre><code class="hljs" data-trim contenteditable>
+				greeting = "Hello World!"
+				</code></pre>
+				<p class=fragment>Note the single =</p>
+				<p class=fragment>single = means assignment</p>
+				<p class=fragment>double = means evaluation / comparison</p>
+			</section>
+			<section>
+				<h2>Variables</h2>
+				<p>Variables can store anything!</p>
+				<ul>
+					<li>String (text in "")</li>
+					<li>Integers (numbers without "")</li>
+					<li>Boolean values (true or false)</li>
+					<li>Random numbers!</li>
+					<li>The sum of things!</li>
+				</ul>
+			</section>
+			<section>
+				<h2>Helper methods!</h2>
+				<ul>
+					<li>upcase</li>
+					<li>capitalize</li>
+					<li>swap case</li>
+					<li>reverse</li>
+					<li>length</li>
+				</ul>
+				<p>These are all built-in with Ruby!</p>
+			</section>
+			<section>
+				<h2>DEMO!</h2>
+			</section>
+			<section>
+				<h2>Your turn!</h2>
+				<p>In Repl.It...</p>
+				<ul>
+					<li>Practice puts and print</li>
+					<li>Do some math in Ruby</li>
+					<li>Set x = a number</li>
+					<li>Set y = a different number</li>
+					<li>Sum x and y</li>
+					<li>Bonus points: set a variable to the sum of x and y</li>
+				</ul>
+				<p>Duration: 5 minutes</p>
+			</section>
+			<section>
+				<h2>Methods!</h2>
+				<p>Methods do things!</p>
+				<p>They take in properties (arguments)</p>
+			</section>
+			<section>
+				<h2>Methods</h2>
+				<p>This method takes in a name, and greets the name.</p>
+				<pre><code class="hljs" data-trim contenteditable>
+					def greeting(name)
+	    		name = name.capitalize
+	    		puts "Hello #{name}"
+					end
+				</code></pre>
+			</section>
+			<section>
+				<h2>Methods</h2>
+				<p>Methods can do fancy things, like looping!</p>
+				<pre><code class="hljs" data-trim contenteditable>
+					def annoying_greeting(name, i)
+					    name = name.upcase
+					    i = i
+					    i.times do
+					        puts "HELLO #{name}"
+					end
+				</code></pre>
+			</section>
+			<section>
+				<h2>DEMO!</h2>
+			</section>
+			<section>
+				<h2>Classes</h2>
+				<ul>
+					<li class="fragment">Object-oriented programming!</li>
+					<li class="fragment">Modeled after “real” things</li>
+					<li class="fragment">Self-contained</li>
+					<li class="fragment">Must be initaitied</li>
+					<li class="fragment">Can inherit properties from "parent" Classes</li>
+				</ul>
+			</section>
+			<section>
+				<h2>DEMO!</h2>
+			</section>
+			<section>
+				<h2>Your turn!</h2>
+				<ul>
+					<li>Write a Class</li>
+					<li>Initialize it</li>
+					<li>Write a simple method for it (like meows)</li>
+					<li>Write a sub Class that inherits from your first Class</li>
+					<li>Start a new class in Repl and set it to a variable, try calling its methods</li>
+				</ul>
+			</section>
+			<section data-background="http://i.giphy.com/n8lmSUTt0yj6M.gif">
+				<h2 class="highlighted-bg">Exercise: Number Guessing Game</h2>
+			</section>
+			<section data-background="http://i.giphy.com/eI0S1dSMO5gw8.gif">
+				<h2 class="highlighted-bg">Rails!</h2>
+			</section>
+			<section>
+				<h2>Rails</h2>
+				<ul>
+					<li class="fragment">Most well-known Ruby gem!</li>
+					<li class="fragment">Invented by DHH (Basecamp)</li>
+					<li class="fragment"><a href="https://www.youtube.com/watch?v=Gzj723LkRJY">Came out in 2005</a></li>
+					<li class="fragment">Powers Twitter in 2006</li>
+					<li class="fragment">Used by companies like Groupon, Funny or Die, Hulu, Airbnb...</li>
+				</ul>
+			</section>
+			<section>
+				<h2>Student projects</h2>
+				<ul>
+					<li><a href="http://www.eatpicky.com/">Picky</a></li>
+					<li><a href="http://keepaustinsinging.com/">Keep Austin Singing</a></li>
+				</ul>
+			</section>
+			<section>
+				<h2>Other gems!</h2>
+				<ul>
+					<li><a href="https://jekyllrb.com/">Jekyll</a></li>
+					<li><a href="https://middlemanapp.com/">Middleman</a></li>
+					<li><a href="http://sass-lang.com/">Sass</a></li>
+				</ul>
+			</section>
+			<section>
+				<h2>Alternative Ruby implementations</h2>
+				<ul>
+					<li><a href="http://jruby.org/">JRuby</a>: Ruby that compiles to Java</li>
+					<li><a href="http://opalrb.org/">Opal</a>: Ruby that compiles to Javascript</li>
+					<li><a href="http://www.rubymotion.com/">Ruby Motion</a>: Ruby that lets you code iOS and Android apps</li>
+				</ul>
+			</section>
+			<section>
+				<h2>Resources</h2>
+				<ul>
+					<li><a href="https://github.com/cecyc/guessing_game/blob/master/guessing_game.rb">Number guessing game solution</a></li>
+					<li><a href="http://rubyinstaller.org/">Installing Ruby on Windows</a></li>
+					<li><a href="https://www.ruby-lang.org/en/documentation/installation/">Installing Ruby on Mac</a></li>
+					<li><a href="http://installrails.com/">Installing Rails</a></li>
+				</ul>
+			</section>
+			<section data-background="http://i.giphy.com/fjgqYjVkzfQ9a.gif">
+				<h2 class="highlighted-bg">Thank you!</h2>
+			</section>
+			<section>
+	<h1>Intro to Ruby</h1>
+	<h3>Girl Develop It ATX</h3>
+	<h4>Instructor: Cecy Correa</h4>
+	<p>
+		<small>Modified from GDI Seattle Ruby track.</small>
+	</p>
+</section>
+<section>
+	<h3>Welcome!</h3>
+	<div class="left-align">
+		<p>Girl Develop It is here to provide affordable and accessible programs to learn software through mentorship and
+			hands-on instruction.
+		</p>
+		<p class="green">Some "rules"</p>
+		<ul>
+			<li>We are here for you!</li>
+			<li>Every question is important.</li>
+			<li>Help each other.</li>
+			<li>Have fun!</li>
+		</ul>
+	</div>
+</section>
+<section>
+	<h3>What is programming?</h3>
+	<ul>
+		<li class="fragment">Teaching the computer to do a task.</li>
+		<li class="fragment">A program is made of one or more files of code, each of which solve part of the overall task.
+		</li>
+	</ul>
+</section>
+<section>
+	<h3>Why Ruby?</h3>
+	<ul>
+		<li class="fragment">It reads like English. The syntax is intuitive.</li>
+		<pre>
+			<code contenteditable class="ruby fragment">
+# Java
+for(int i = 0; i < 5; i++)
+
+# Ruby
+5.times do
+			</code>
+		</pre>
+		<li class="fragment">Large, friendly community.</li>
+		<li class="fragment">Lots of resources available!</li>
+		<li class="fragment">You can get a web app off the ground quickly.</li>
+		<li class="fragment">Using Ruby will cost you $0.</li>
+	</ul>
+</section>
+<section data-background="http://i.giphy.com/TdfyKrN7HGTIY.gif">
+	<h2 class="highlighted-bg">Made for programmer happiness</h2>
+</section>
+<section>
+	<h3>What is Ruby used for?</h3>
+	<ul>
+		<li class="fragment">Web development (Rails)</li>
+		<li class="fragment">iPhone apps (RubyMotion)</li>
+		<li class="fragment">System Administration (Chef)</li>
+		<li class="fragment">Testing (Vagrant)</li>
+		<li class="fragment">Security (Metasploit)</li>
+	</ul>
+</section>
+<section>
+	<h3>Who is using Ruby?</h3>
+	<ul>
+		<li>Hulu</li>
+		<li>Funny or Die</li>
+		<li>Groupon</li>
+		<li>Shopify</li>
+		<li>Airbnb</li>
+	</ul>
+</section>
+<section>
+	<h3>Working with Ruby</h3>
+	<p>For Ruby, we'll use <a href="http://repl.it">REPL.IT</a> to run Ruby code.</p>
+	<p>For Rails, we'll use <a href="https://c9.io/">CLOUD 9</a>.</p>
+</section>
+<section>
+	<h3>Setting up your own environment</h3>
+	<p>We'll leave 30 minutes at the end of today to install Ruby and Rails, if you want to develop "locally" (i.e. saving and running files in your computer).</p>
+</section>
+<section>
+	<h3>Super duper bonus points</h3>
+	<p>Want to 'deploy' your Rails site on the actual web? Sign up for <a href="http://heroku.com">HEROKU</a>.</p>
+	<p>I will show you how to upload your Rails site on the web for those of you who are interested, but this is by no means required.</p>
+</section>
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
