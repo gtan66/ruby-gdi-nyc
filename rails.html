@@ -102,6 +102,24 @@
 				</section>
 				<section>
 					<h2>There's a lot in a Rails app, let's break it down</h2>
+				</section>
+				<section>
+					<h2>Convention over configuration</h2>
+					<p class="fragment">The reason Rails got so popular is for "convention over configuration." Rails already comes "pre-configured" with a lot of stuff so you don't have to spend time doing set-up.</p>
+					<p class="fragment">This means you have to follow convention.</p>
+					<p class="fragment">Good news! There's a lot of documentation and resources.</p>
+				</section>
+					<section>
+						<h2>Convention over configuration</h2>
+						<p>The downside is — you have to be careful with what you do / move.</p>
+						<p class="fragment">For example, you wouldn't want to delete a folder you don't think you're going to use.</p>
+					</section>
+					<section>
+						<h2>Let's look at the app again</h2>
+						<img src="images/rails.png" alt="Rails">
+					</section>
+				<section>
+					<h2>What you need to know</h2>
 					<p class="fragment">For now, you really only want to be concerned with:</p>
 					<ul>
 						<li class="fragment">app folder</li>
@@ -113,9 +131,9 @@
 					<h2>App folder</h2>
 					<p>The app folder contains, well, the most important elements of your app!</p>
 					<ul>
-						<li class="fragment">Controllers folder</li>
 						<li class="fragment">Models folder</li>
 						<li class="fragment">Views folder</li>
+						<li class="fragment">Controllers folder</li>
 					</ul>
 					<p class="fragment">More on this later!</p>
 					<p class="fragment">This is where you'll spend most of your time in</p>
@@ -123,13 +141,34 @@
 				<section>
 					<h2>Config folder</h2>
 					<p>The config folder is good for:</p>
-					<p>Setting up for database (only have to do it once!)</p>
-					<p>Setting up "routes". (More on this later!)</p>
+					<ul>
+						<li class="fragment">Setting up for database (only have to do it once, it's super easy!)</li>
+						<li class="fragment">Setting up "routes" to direct traffic. (More on this later!)</li>
+					</ul>
 				</section>
 				<section>
 					<h2>DB folder</h2>
 					<p>Your Rails app is going to need a database to run and store info.</p>
 					<p>The db folder will have all of the elements of your database.</p>
+				</section>
+				<section>
+					<h2>Let's take a look!</h2>
+				</section>
+				<section>
+					<h2>Model-View-Controller</h2>
+					<p>Also known as MVC</p>
+					<img src="images/MVC.png" alt="MVC">
+				</section>
+				<section>
+					<h2>MVC</h2>
+					<p class="fragment">Model: the brains (like a class!)</p>
+					<p class="fragment">Controller: dispatcher</p>
+					<p class="fragment">View: what the user sees</p>
+				</section>
+				<section>
+					<h2>MVC</h2>
+					<p>"MVC" is a common "pattern" used in programming and it's what Rails uses.</p>
+					<p>The Model, View, and Controller all go hand in hand.</p>
 				</section>
 				<section>
 				  <h2>Resources</h2>
