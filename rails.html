@@ -166,10 +166,131 @@
 					<p class="fragment">View: what the user sees</p>
 				</section>
 				<section>
+					<h2>MVC as a recipe</h2>
+					<p class="fragment">Model: ingredients of a recipe</p>
+					<p class="fragment">Controller: directions of a recipe</p>
+					<p class="fragment">View: picture of a recipe</p>
+				</section>
+				<section>
 					<h2>MVC</h2>
 					<p>"MVC" is a common "pattern" used in programming and it's what Rails uses.</p>
 					<p>The Model, View, and Controller all go hand in hand.</p>
 				</section>
+				<section>
+					<h2>Commands to know</h2>
+					<pre class="fragment"><code contenteditable class="ruby">
+rails generate *something*
+					</code></pre>
+					<p class="fragment">This is a generator that comes in Rails that helps create necessary files for you.</p>
+					<pre class="fragment"><code contenteditable class="ruby">
+rake db:migrate
+					</code></pre>
+					<p class="fragment">This is always necessecary to generate a database</p>
+				</section>
+				<section>
+					<h2>Databases</h2>
+					<p class="fragment">sqlite3: the default database that comes with Rails</p>
+					<p class="fragment">postgresql: more widely used in "real world" apps. You will need to install postgres in order to deploy your app.</p>
+					<p class="fragment"><small>There is an extra step with postgres when creating a database. You need to run rake db:create before rake db:migrate</small></p>
+				</section>
+				<section>
+					<h2>Starting your Rails app</h2>
+					<p>First steps:</p>
+					<ol>
+						<li class="fragment">Create a Model</li>
+						<li class="fragment">Create a Migration</li>
+						<li class="fragment">Run the Migration</li>
+					</ol>
+					<p class="fragment"><small>Likely you will only do these during project setup.</small></p>
+				</section>
+				<section>
+					<h2>Starting your Rails app</h2>
+					<p>Ongoing steps:</p>
+					<p><small>i.e. you will do these more than once over the course of development:</small></p>
+					<ol>
+						<li class="fragment">Generate a Controller</li>
+						<li class="fragment">Write methods in your Controller</li>
+						<li class="fragment">Generate corresponding Views</li>
+						<li class="fragment">Create routes</li>
+					</ol>
+				</section>
+				<section data-background="http://i.giphy.com/LHZyixOnHwDDy.gif">
+					<h2 class="highlighted-bg">Let's start coding!</h2>
+				</section>
+				<section>
+					<h2>Demo creating a Rails app!</h2>
+					<p><a href="https://docs.google.com/document/d/1kMu_LfoiDr4dWrQGaZ-Lkk_5kU2Rhzv8fzcgGkUF4IM/edit#heading=h.dplikkq9wehm">Notes here!</a></p>
+				</section>
+				<section data-background="http://i.giphy.com/S6prbT1uZRre8.gif">
+					<h2 class="highlighted-bg">Mind blown.</h2>
+				</section>
+				<section>
+					<h2>CRUD</h2>
+					<p>What we just built is called "CRUD"</p>
+					<p class="fragment">CREATE</p>
+					<p class="fragment">READ</p>
+					<p class="fragment">UPDATE</p>
+					<p class="fragment">DELETE</p>
+					<p class="fragment">This is the most common type of app.</p>
+				</section>
+				<section>
+					<h2>Types of CRUD apps</h2>
+					<p class="fragment">Facebook</p>
+					<p class="fragment">Twitter</p>
+					<p class="fragment">Pinterest</p>
+					<p class="fragment">A blog</p>
+					<p class="fragment">Pretty much any app needs basic CRUD</p>
+				</section>
+				<section data-background="https://jazzmonkey.files.wordpress.com/2013/07/morpheus.jpg">
+					<h2>What if I told you there is an easier way?</h2>
+				</section>
+				<section>
+					<h2>Rails scaffolding</h2>
+					<pre><code class="hljs" data-trim contenteditable>
+	rails generate scaffold *something*
+					</code></pre>
+					<p class="fragment">This command generates:</p>
+					<ul>
+						<li class="fragment">Model</li>
+						<li class="fragment">Migration</li>
+						<li class="fragment">Controller (filled in!)</li>
+						<li class="fragment">Views (filled in!)</li>
+						<li class="fragment">Routes</li>
+					</ul>
+				</section>
+				<section>
+					<h2>So why did we just spend so much time doing everything manually?</h2>
+					<p class="fragment">Because it's important to know the underlying factors of how things work.</p>
+					<p class="fragment">Now you can spend your time being more productive!</p>
+				</section>
+				<section data-background="http://i.giphy.com/F7smjo5S2EhP2.gif">
+					<h2>Next steps: Gems</h2>
+				</section>
+				<section>
+					<h2>Gems</h2>
+					<p class="fragment">Gems are "packages" in Ruby that do things for you.</p>
+					<p class="fragment">There are a lot of gems you can take advantage of.</p>
+					<p class="fragment">This is great when you're learning! You can see the gem's source code and see how they implemented the feature.</p>
+				</section>
+				<section>
+					<h2>Gems</h2>
+					<p>When choosing a gem, make sure that:</p>
+					<ul>
+						<li class="fragment">The "build" is passing</li>
+						<li class="fragment">It looks to be recently active</li>
+						<li class="fragment">Has a fair amount of contributors</li>
+						<li class="fragment">Is well documented</li>
+					</ul>
+			</section>
+			<section>
+				<h2>Adding a gem</h2>
+				<p>Open your "Gemfile" (located at the root of the app)</p>
+				<pre><code class="hljs" data-trim contenteditable>
+gem 'name-of-gem'
+				</code></pre>
+				<p class="fragment"><small>Usually, the gem documentation will say how to do this</small></p>
+				<p class="fragment"><small>Run 'bundle install' on the command line to install your gems</small></p>
+			</section>
 				<section>
 				  <h2>Resources</h2>
 				  <ul>
