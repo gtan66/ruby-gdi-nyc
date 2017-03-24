@@ -20,7 +20,7 @@ Topics covered:
 
 Tools used: repl.it online Ruby repl.
 
-[Click here for slides.](http://cecyc.github.io/ruby-rails-gdi-atx/ruby.html#/)
+[Click here day 1 for slides.](http://cecyc.github.io/ruby-rails-gdi-atx/ruby.html#/)
 
 ## Day 2: Intro to Rails
 
@@ -39,4 +39,4 @@ Topics covered:
 
 Tools used: Cloud9 cloud-based Rails development environment. This was chosen to ensure everyone was on the same environment (Mac _and_ PC). Alternatively, students can develop locally if they want to install Ruby and Rails on their machine.
 
-[Click here for slides.](http://cecyc.github.io/ruby-rails-gdi-atx/rails.html#/)
+[Click here for day 2 slides.](http://cecyc.github.io/ruby-rails-gdi-atx/rails.html#/)
