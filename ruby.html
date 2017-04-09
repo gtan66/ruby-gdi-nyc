@@ -375,7 +375,7 @@ pet_types << "bird"
 			<section>
 				<h2>Putting stuff in an array (method #2!)</h2>
 				<pre><code class="hljs" data-trim contenteditable>
-my_fancy_array.push("bird")
+pet_types.push("bird")
 				</code></pre>
 			</section>
 			<section data-background="http://i.giphy.com/zbALuq5hKcyk0.gif">
@@ -443,28 +443,36 @@ pet = { type: "snake", prices: [10, 15, 20] }
 				</code></pre>
 			</section>
 			<section>
-				<h2>Let's use Hashes and Arrays to build petstore inventory together</h2>
+				<h2>Let's use Hashes and Arrays to build a petstore inventory together</h2>
 			</section>
 			<section>
 				<h2>Hashes and Arrays</h2>
 				<pre><code class="hljs" data-trim contenteditable>
-menu = {
-	:drinks => ["OJ", "Coke", "Coffee"],
-	:food => ["Burger", "Pizza", "PB&J"]
-}
+ pet_types = [ 
+      {
+        name: "snakes",
+        price: 10
+      },
+      {
+        name: "cats",
+        price: 20
+      },
+      {
+        name: "dogs",
+        price: 20
+      }
+    ]
 				</code></pre>
 			</section>
 			<section>
 				<h2>Hashes and Arrays</h2>
 				<p>Getting info out</p>
 				<pre><code class="hljs" data-trim contenteditable>
-menu[:drinks]
-menu[:food]
-				</code></pre>
-				<p>Returns all drinks and food. To just get one, you have to use the item's position in the array:</p>
-				<pre><code>
-menu[:drinks][0]
-menu[:food][2]
+pet_types[0][:name]
+pet_types[0][:price]	
+pet_types[1][:name]
+pet_types[1][:price]
+# etc....
 				</code></pre>
 				<p class="fragment">So tedious!</p>
 			</section>
@@ -475,11 +483,12 @@ menu[:food][2]
 				<h2>.each do</h2>
 				<p>You can use .each do to loop through items in an array!</p>
 				<pre><code>
-menu[:drinks].each do |drink|
-	puts drink
+pet_types.each do |pet_type|
+	puts pet_type[:name]
+	puts pet_type[:price]
 end
 			</code></pre>
-			<p>This outputs all of the drinks at once!</p>
+			<p>This outputs all of the types and their attributes at once!</p>
 			</section>
 			<section data-background="http://i.giphy.com/oubM1tKqnLW5G.gif">
 				<h2 class="highlighted-bg">Overwhelmed?<br> It's ok! We're almost there!</h2>
