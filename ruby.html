@@ -426,19 +426,21 @@ pet_types[2]
 			<section data-background="http://i.giphy.com/KknqVCr1J5kTm.gif">
 				<h2 class="highlighted-bg">Huh?</h2>
 			</section>
-			<section>
-				<h2>Hashes</h2>
-				<p>Keys and Values go together. It helps you "link" data.</p>
-				<p>Think of it like an index, almost.</p>
-			</section>
-			<section>
+				<section>
 				<h2>Hashes</h2>
 				<pre><code class="hljs" data-trim contenteditable>
-menu = {:drink => "cola", :food => burger}
+pet = { type: "snake", price: 10 }
+
+vs
+
+pet_type = "snake"
+pet_price = 10
 				</code></pre>
 				<p>This helps keep info organized.</p>
-				<p>Everytime you want to look up what drink you have, "cola" will be returned</p>
 				<p class="fragment">What are other things we could store in hashes?</p>
+				<pre><code class="hljs" data-trim contenteditable>
+pet = { type: "snake", prices: [10, 15, 20] }
+				</code></pre>
 			</section>
 			<section>
 				<h2>Let's use Hashes and Arrays to build petstore inventory together</h2>
