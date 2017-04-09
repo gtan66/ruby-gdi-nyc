@@ -577,15 +577,17 @@ class Cat < Pet
 #some more stuff
 end
 
-class Dog < Pet
-#some more stuff
-	def talks
-		super("wooofff")
-	end
-end
-	
 			</code></pre>
-		
+		<section>
+		<pre><code>
+		class Dog < Pet
+			#some more stuff
+			def talks
+				super("wooofff")
+			end
+		end
+			</code></pre>
+		</section>
 			</section>
 			<section>
 				<p class="fragment"><small>You can use the < to symbolize Cat and Dog is a sub-class from Pet.</small></p>
@@ -606,8 +608,26 @@ end
 			</section>
 			<section>
 				<h2>Time to build our pet shop!</h2>
+				<p> Everyone go to https://repl.it/HBwN/7 </p>
+				<p> Todo: </p>
+				<ul>
+					<li> Go to </li>
+					
+				</ul>
 			</section>
 
+			<section>
+				<p> Todo: </p>
+					<ul>
+						<li> Go to pet_types.rb and finish the Dog subclass by implementing the initializer and the 'talk' method</li>
+						<li> Go to pet.rb and finish the 'sleep' method. Implement it in a way that will
+						pause the method for 5 seconds while the animal is sleeping. Take a look at the 'play' method for a hint. Use 'puts' at the end to let the user know when the pet has woken up! 
+						<li> Go to main.rb file and ad a condition for action == "sleep" in the 'if' statement and call your new sleep function when the user passes in "sleep"
+						
+					</ul>
+					
+				</ul>
+			</section>
 			<section data-background="http://i.giphy.com/fjgqYjVkzfQ9a.gif">
 				<div class="highlighted-bg">
 					<h2>Thank you!</h2>
