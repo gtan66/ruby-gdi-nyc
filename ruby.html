@@ -439,7 +439,7 @@ pet_price = 10
 				</code></pre>
 				<p>This helps keep info organized.</p>
 				<p class="fragment">What are other things we could store in hashes?</p>
-				<pre><code class="hljs" data-trim contenteditable>
+				<pre><code class="fragment" class="hljs" data-trim contenteditable>
 pet = { type: "snake", prices: [10, 15, 20] }
 				</code></pre>
 			</section>
@@ -490,6 +490,16 @@ pet_types.each do |pet_type|
 end
 			</code></pre>
 			<p>This outputs all of the types and their attributes at once!</p>
+			</section>
+			<section>
+				<h2>Can also use For loops!</h2>
+			
+				<pre><code>
+for type in pet_types
+	puts pet_type[:name]
+	puts pet_type[:price]
+end
+			</code></pre>
 			</section>
 			<section data-background="http://i.giphy.com/oubM1tKqnLW5G.gif">
 				<h2 class="highlighted-bg">Overwhelmed?<br> It's ok! We're almost there!</h2>
