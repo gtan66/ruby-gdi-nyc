@@ -621,7 +621,6 @@ class Cat
 	def talks
 		puts "*meowwwww*"
 	end
-
 end
 			</code></pre>
 			</section>
@@ -650,18 +649,23 @@ class Pet
 end
 
 class Cat < Pet
+	def initialize(name)
+		@name = name
+	end
+	
 	def talks
 		super("meowwww")
 	end
-
 end
-
 			</code></pre>
 			</section>
 		<section>
 		<pre><code>
 		class Dog < Pet
-			#some more stuff
+			def initialize(name)
+				@name = name
+			end
+			
 			def talks
 				super("wooofff")
 			end
