@@ -3,6 +3,7 @@
 
 	<head>
 		<meta charset="utf-8">
+	
 
 		<title>Intro to Ruby</title>
 
@@ -224,7 +225,7 @@ for(int i = 0; i < 5; i++)
 				<ol>
 					<li class="fragment">We're going to get the user's name</li>
 					<li class="fragment">Get where they're from</li>
-					<li class="fragment">Get their favorite anime</li>
+					<li class="fragment">Get their favorite animal</li>
 				</ol>
 			</section>
 			<section>
@@ -523,15 +524,13 @@ end
 				<pre><code>
 class Cat
 
-	attr :name, :breed, :age
+	attr :name 
 
-	def initialize(name, breed, age)
+	def initialize(name)
 		@name = name
-		@breed = breed
-		@age = age
 	end
 
-	def meows
+	def talks
 		puts "*meowwwww*"
 	end
 
@@ -542,7 +541,7 @@ end
 				<h2>Class inheritance</h2>
 				<img src="images/cat-kitty.jpg" alt="cat and kitty">
 				<small>
-					<p class="fragment">What if you wanted to create a class "Kitty", but you knew it would be pretty similar to "Cat"?</p>
+					<p class="fragment">What if you wanted to create a class "Dog", but you knew it would be pretty similar to "Cat"?</p>
 					<p class="fragment">Is there a way to "copy" a class?</p>
 					<p class="fragment">Why, yes! (Sort of.) You can use sub-classes.</p>
 				</small>
@@ -550,19 +549,36 @@ end
 			<section>
 				<h2>Sub-classes</h2>
 				<pre><code>
-class Cat
+class Pet
+	attr :name 
 
-#some stuff
-
+	def initialize(name)
+		@name = name
+	end
+	
+	def talks(noise)
+		puts noise
+	end
 end
 
-class Kitty < Cat
+class Cat < Pet
+	def talks
+		super("meowwww")
+	end
 #some more stuff
 end
+
+class Dog < Pet
+#some more stuff
+	def talks
+		super("wooofff")
+	end
+end
+	
 			</code></pre>
-			<p class="fragment"><small>You can use the < to symbolize Kitty is a sub-class from Cat.</small></p>
-			<p class="fragment"><small>The stuff available for Cat is available for Kitty.</small></p>
-			<p class="fragment"><small>The stuff available for Kitty is NOT available for Cat.</small></p>
+			<p class="fragment"><small>You can use the < to symbolize Cat and Dog is a sub-class from Pet.</small></p>
+			<p class="fragment"><small>The stuff available for Pet is available for Cat.</small></p>
+			<p class="fragment"><small>The stuff available for Cat is NOT available for Pet.</small></p>
 			</section>
 			<section>
 				<h2>Inheritance travels down, not up.</h2>
@@ -570,15 +586,14 @@ end
 			<section>
 				<h2>Your turn!</h2>
 				<ul>
-					<li>Write a Class</li>
-					<li>Initialize it</li>
-					<li>Write a simple method for it (like meows)</li>
-					<li>Write a sub Class that inherits from your first Class</li>
+					<li>Write a Class for Snake that inhereits from Pet</li>
+					<li>Implement talk for Snake</li>
+					<li>Add more methods to Pet (ex: sleep, eat) and Snake (ex: shed_skin)</li>
 					<li>Keep it simple! :)</li>
 				</ul>
 			</section>
 			<section>
-				<h2>That's all folks!</h2>
+				<h2>Time to build our pet shop!</h2>
 			</section>
 
 			<section data-background="http://i.giphy.com/fjgqYjVkzfQ9a.gif">
