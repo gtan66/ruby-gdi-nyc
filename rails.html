@@ -279,7 +279,17 @@ get ‘chirps/new’, to: ‘chirps#new'
 post ‘/chirps’, to: ‘chirps#create’
 get ‘chirps/:id’, to: ‘chirps#show’, as: :chirp
 delete '/chirps/:id', to: 'chirps#destroy'
+root ‘chirps#index 
 </code></pre>
+				</section>
+				<section>
+					<h2>Testing</h2>
+					<p>Start your Rails server using:</p>
+					<pre>
+					<code contenteditable class="ruby">rails server
+					</code>
+					</pre>
+					<p>Test out your app by navigating to localhost:3000 if developing locally or launch app via Cloud9 </p>
 				</section>
 				<section data-background="http://i.giphy.com/S6prbT1uZRre8.gif">
 					<h2 class="highlighted-bg">Mind blown.</h2>
@@ -322,6 +332,17 @@ delete '/chirps/:id', to: 'chirps#destroy'
 					<h2>So why did we just spend so much time doing everything manually?</h2>
 					<p class="fragment">Because it's important to know the underlying factors of how things work.</p>
 					<p class="fragment">Now you can spend your time being more productive!</p>
+				</section>
+				<section>
+					<h2>Magic?</h2>
+					<p>Rails does a ton for you out of the box!</p>
+					<ul>
+						<li> Migrations generate sql for you </li>
+						<li> Server layer parses requests for you </li> 
+						<li> Router layer knows how to dispatch requests to right controller classes </li>
+						<li> Controller layer coordinates between model and views to build right response (MVC!) </li> 
+					</ul>
+					<p> Learn more about the Rails request/response lifecycle <a href="http://www.rubypigeon.com/posts/examining-internals-of-rails-request-response-cycle/" target="_blank">here</a> </p> 
 				</section>
 				<section data-background="http://i.giphy.com/F7smjo5S2EhP2.gif">
 					<h2>Next steps: Gems</h2>
