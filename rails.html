@@ -61,6 +61,9 @@
 						<li class="fragment">Sub-classes</li>
 					</ul>
 				</section>
+				<section>
+					<a href="https://repl.it/HBzD/4" target="_blank"><h2>Demo</h2></a>
+				</section>
 				<section data-background="http://i.giphy.com/eI0S1dSMO5gw8.gif">
 				  <h2 class="highlighted-bg">Rails!</h2>
 				</section>
@@ -77,7 +80,40 @@
 				<section>
 					<h2>Developing with Rails</h2>
 					<p>You can use Cloud9 or Rails "locally" if you already have it installed.</p>
-					<p>If you're going to use Cloud9, go ahead and sign up for an account.</p>
+					<p>We are going to be using Cloud9, so please sign up!</p>
+				</section>
+				<section>
+					<h2>Why use Rails?</h2> 
+					<li>Tons of included modules and open-source gems to make app building easier!</li> 
+					<li>Well-written documentation!</li>
+					<li>Convention over configuration!</li>
+				</section>
+				<section>
+					<h2>Popular Rails Gems</h2>
+					<li><a href="https://github.com/plataformatec/devise" target="_blank"> Devise </a> for user authentication. </li>
+					<li><a href="https://github.com/rspec/rspec-rails" target="_blank"> Rspec </a> for testing </li>
+					<li><a href="https://github.com/reactjs/react-rails" target="_blank"> React </a> for frontend </li>
+					
+					<p> Tons of different gems you can install to provide standard functionality in your app! </p>
+				</section>
+				<section> 
+					<h2>Documentation</h2> 
+					<a href="http://guides.rubyonrails.org/" target="_blank"> Ruby on Rails Guide </a>
+					<a href="http://api.rubyonrails.org/" target="_blank"> Ruby on Rails API </a>
+				</section>
+				<section>
+					<h2>Convention over configuration</h2>
+					<p class="fragment">The reason Rails got so popular is for "convention over configuration." Rails already comes "pre-configured" with a lot of stuff so you don't have to spend time doing set-up.</p>
+					<p class="fragment">This means you have to follow convention.</p>
+					<p class="fragment">Good news! There's a lot of documentation and resources.</p>
+				</section>
+				<section>
+					<h2>Convention over configuration</h2>
+					<p>The downside is — you have to be careful with what you do / move.</p>
+					<p class="fragment">For example, you wouldn't want to delete a folder you don't think you're going to use.</p>
+				</section>
+				<section>
+					Let's get started!
 				</section>
 				<section>
 					<h2>Create a new rails app</h2>
@@ -89,7 +125,7 @@
 					<pre class="fragment"><code class="hljs" data-trim contenteditable>
 	rails new bananas
 					</code></pre>
-					<p class="fragment"><small>^^That creates a new Rails app called "bananas"</small></p>
+					<p class="fragment"<small>^^That creates a new Rails app called "bananas"</small></p>
 				</section>
 				<section data-background="http://i.giphy.com/nTqBNQXlEixLa.gif">
 					<h2 class="highlighted-bg">We're done. Go home.</h2>
@@ -102,23 +138,9 @@
 					<h2 class="highlighted-bg">Overwhelmed?</h2>
 				</section>
 				<section>
-					<h2>There's a lot in a Rails app, let's break it down</h2>
+					<h2>Let's look at the app again</h2>						
+					<img src="images/rails.png" alt="Rails">
 				</section>
-				<section>
-					<h2>Convention over configuration</h2>
-					<p class="fragment">The reason Rails got so popular is for "convention over configuration." Rails already comes "pre-configured" with a lot of stuff so you don't have to spend time doing set-up.</p>
-					<p class="fragment">This means you have to follow convention.</p>
-					<p class="fragment">Good news! There's a lot of documentation and resources.</p>
-				</section>
-					<section>
-						<h2>Convention over configuration</h2>
-						<p>The downside is — you have to be careful with what you do / move.</p>
-						<p class="fragment">For example, you wouldn't want to delete a folder you don't think you're going to use.</p>
-					</section>
-					<section>
-						<h2>Let's look at the app again</h2>
-						<img src="images/rails.png" alt="Rails">
-					</section>
 				<section>
 					<h2>What you need to know</h2>
 					<p class="fragment">For now, you really only want to be concerned with:</p>
@@ -136,7 +158,6 @@
 						<li class="fragment">Views folder</li>
 						<li class="fragment">Controllers folder</li>
 					</ul>
-					<p class="fragment">More on this later!</p>
 					<p class="fragment">This is where you'll spend most of your time in</p>
 				</section>
 				<section>
@@ -154,11 +175,6 @@
 				</section>
 				<section>
 					<h2>Let's take a look!</h2>
-				</section>
-				<section>
-					<h2>Model-View-Controller</h2>
-					<p>Also known as MVC</p>
-					<img src="images/MVC.png" alt="MVC">
 				</section>
 				<section>
 					<h2>MVC</h2>
