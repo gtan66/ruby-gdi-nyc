@@ -160,66 +160,47 @@
 					<h2>What you need to know</h2>
 					<p class="fragment">For now, you really only want to be concerned with:</p>
 					<ul>
-						<li class="fragment">app folder</li>
-						<li class="fragment">config folder</li>
-						<li class="fragment">db folder</li>
+						<li class="fragment">Controllers: app/controller</li>
+						<li class="fragment">Models: app/models</li>
+						<li class="fragment">Views: app/views </li>
+						<li class="fragment">Database: db/ </li>
+						<li class="fragment">Config: config/ <li>
 					</ul>
-				</section>
-				<section>
-					<h2>App folder</h2>
-					<p>The app folder contains, well, the most important elements of your app!</p>
-					<ul>
-						<li class="fragment">Models folder</li>
-						<li class="fragment">Views folder</li>
-						<li class="fragment">Controllers folder</li>
-					</ul>
-					<p class="fragment">This is where you'll spend most of your time in</p>
-				</section>
-				<section>
-					<h2>Config folder</h2>
-					<p>The config folder is good for:</p>
-					<ul>
-						<li class="fragment">Setting up for database (only have to do it once, it's super easy!)</li>
-						<li class="fragment">Setting up "routes" to direct traffic. (More on this later!)</li>
-					</ul>
-				</section>
-				<section>
-					<h2>DB folder</h2>
-					<p>Your Rails app is going to need a database to run and store info.</p>
-					<p>The db folder will have all of the elements of your database.</p>
-				</section>
-				<section>
-					<h2>Let's take a look!</h2>
-				</section>
-				<section>
-					<h2>Commands to know</h2>
-					<pre class="fragment"><code contenteditable class="ruby">
-rails generate *something*
-					</code></pre>
-					<p class="fragment">This is a generator that comes in Rails that helps create necessary files for you.</p>
-					<pre class="fragment"><code contenteditable class="ruby">
-rake db:migrate
-					</code></pre>
-					<p class="fragment">This is always necessecary to generate a database</p>
-				</section>
-				<section>
-					<h2>Databases</h2>
-					<p class="fragment">sqlite3: the default database that comes with Rails</p>
-					<p class="fragment">postgresql: more widely used in "real world" apps. You will need to install postgres in order to deploy your app.</p>
-					<p class="fragment"><small>There is an extra step with postgres when creating a database. You need to run rake db:create before rake db:migrate</small></p>
 				</section>
 				<section>
 					<h2>Starting your Rails app</h2>
-					<p>First steps:</p>
+					<p> For every page of your web app: </p>
 					<ol>
-						<li class="fragment">Create a Model</li>
-						<li class="fragment">Create a Migration</li>
-						<li class="fragment">Run the Migration</li>
+						<li> Data:
+						<ul>
+						  <li>Generate a Model file</li>
+						  <li>Create a Migration</li>
+						  <li>Run the Migration</li>
+						</ul>
+						</li>
+						<li> Controller: 
+							<ul>
+						  	<li> Generate a Controller file </li>
+					          	<li> Write controller methods </li>
+							</ul>
+						</li>
+						<li> View:
+							<ul>
+								<li> Generate a View file </li>
+								<li> Write View html/javascript/css </li> 
+							</ul>
+						</li>
+						<li> Configure:
+							<ul> 
+								<li> Create a route to your new web page </li>  
+							</ul>
+						</li>
 					</ol>
-					<p class="fragment"><small>Likely you will only do these during project setup.</small></p>
 				</section>
 				<section>
 					<h2>Starting your Rails app</h2>
+					<p>For every page of your webb app </p> 
+					
 					<p>Ongoing steps:</p>
 					<p><small>i.e. you will do these more than once over the course of development:</small></p>
 					<ol>
