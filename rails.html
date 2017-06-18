@@ -202,12 +202,12 @@
 						</li>
 					</ol>
 				</section>
-				<section data-background="http://gph.is/1c614EN">
+				<section data-background="https://media.giphy.com/media/zcCGBRQshGdt6/giphy.gif">
 					<h2>Easy peasy!</h2>
 					<p>Data, Controller, View, Route<p>
 					
 				</section>
-				<section data-background="http://i.giphy.com/LHZyixOnHwDDy.gif">
+				<section data-background="https://68.media.tumblr.com/tumblr_lw9r6l4l9w1r790gdo1_500.gif">
 					<h2 class="highlighted-bg">Let's start coding!</h2>
 				</section>
 				<section>
@@ -239,7 +239,6 @@ Chirp.delete(x)  #deletes a specific Chirp in the database corresponding to the 
 				
 					</code>
 					</pre>
-				
 				</section>
 				<section>
 					<h2> Controller </h2>
@@ -247,6 +246,24 @@ Chirp.delete(x)  #deletes a specific Chirp in the database corresponding to the 
 					<code contenteditable class="ruby">rails generate controller Chirp index
 					</code>
 					</pre>
+					<p>Rails convention: index, show, update, create, destroy</p> 
+				</section>
+				<section>
+					<h2> Views </h2>
+					<p>Rails convention: index.html.erb, edit.html.erb, new.html.erb, show.html.erb</p> 
+					<li> CSS: Add it to app/assets/stylesheets/chirps.scss</li>
+					<li> Javascript (CoffeeScript): Add it to app/assets/javascripts/chirps.coffee </li>
+				</section>
+				<section>
+					<h2> Views </h2>
+					<p>Uses erb!  (HTML file with embedded Ruby) </p>
+					<p>Common Helpers:
+						<li>link_to</li>
+						<li>form_for</li>
+						<li>render</li>
+					</p>
+					<p> If you want to learn more about how Rails automatically bundles up all these HTML, CSS, and Javascript files: 
+						<a href="http://guides.rubyonrails.org/asset_pipeline.html"  target="_blank">Rails Asset Pipeline</a></p>
 				</section>
 				<section> 
 					<h2> Routes </h2>
