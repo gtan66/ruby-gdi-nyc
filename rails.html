@@ -213,37 +213,36 @@
 					<h2>Chirp: Twitter Clone</h2>
 					<p>To create your model and migration file: </p>
 					<pre>
-						<code contenteditable class="ruby">rails generate model Chirp
-						</code>
+					<code contenteditable class="ruby">rails generate model Chirp
+					</code>
 					</pre>
 					<p>To create your database table from the migration:</p>
 					<pre>
-						<code contenteditable class="ruby">rake db:migrate
-						</code>
+					<code contenteditable class="ruby">rake db:migrate
+					</code>
 					</pre>
 					<p>To test out the model:</p>
 					<pre>
-						<code contenteditable class="ruby">rails console 
-						</code>
+					<code contenteditable class="ruby">rails console 
+					</code>
 					</pre>
 					
 				</section>
 				<section>
 					<h2> Controller </h2>
 					<pre>
-						<code contenteditable class="ruby">rails generate controller Chirp index
-						</code>
+					<code contenteditable class="ruby">rails generate controller Chirp index
+					</code>
 					</pre>
 				</section>
 				<section> 
 					<h2> Routes </h2>
-					<pre>
-						<code contenteditable class="ruby">
-						get ‘chirps/new’, to: ‘chirps#new’
-						post ‘/chirps’, to: ‘chirps#create’
-						get ‘chirps/:id’, to: ‘chirps#show’, as: :chirp
-						delete '/chirps/:id', to: 'chirps#destroy'
-						</code>
+					<pre><code contenteditable class="ruby">
+					get ‘chirps/new’, to: ‘chirps#new’
+					post ‘/chirps’, to: ‘chirps#create’
+					get ‘chirps/:id’, to: ‘chirps#show’, as: :chirp
+					delete '/chirps/:id', to: 'chirps#destroy'
+					</code>
 					</pre>
 				</section>
 				<section data-background="http://i.giphy.com/S6prbT1uZRre8.gif">
