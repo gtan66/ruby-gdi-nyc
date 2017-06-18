@@ -221,12 +221,24 @@
 					<code contenteditable class="ruby">rake db:migrate
 					</code>
 					</pre>
+				</section>
+				<section>
+					<h2> Model </h2>
+					<p> Active Record object </p>
+					<p><small>Active Record is an "Object Relational Mapping" framework. It maps database tables to Ruby objects for us.</small></p> 
 					<p>To test out the model:</p>
 					<pre>
-					<code contenteditable class="ruby">rails console 
+					<code contenteditable class="ruby">
+rails console 
+Chirp.all        #brings up all Chirps. You’ll notice it’s an array!
+Chirp.first      #brings up the first Chirp in the database
+Chirp.last       #brings up the last Chirp in the database
+Chirp.delete_all #deletes all the Chirps in the database (be careful!)
+Chirp.delete(x)  #deletes a specific Chirp in the database corresponding to the id.
+				
 					</code>
 					</pre>
-					
+				
 				</section>
 				<section>
 					<h2> Controller </h2>
